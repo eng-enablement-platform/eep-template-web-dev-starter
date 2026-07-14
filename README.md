@@ -20,14 +20,18 @@ HTML, CSS and JavaScript are kept in separate files — no single-file monolith.
 
 ## Running it
 
-The JavaScript uses ES modules, which browsers only load over HTTP (not `file://`).
-Serve the folder with any static server and open the printed URL:
+No build step — all you need is VS Code and its dev server.
 
-```
-python3 -m http.server 8000
-```
+1. Open VS Code and install the **Live Server** extension (by Ritwick Dey).
+2. Clone this repo and open the folder in VS Code.
+3. Right-click `index.html` and choose **Open with Live Server**.
 
-Then visit http://localhost:8000 and edit the files — refresh to see changes.
+The JavaScript uses ES modules, which browsers only load over HTTP (not `file://`),
+so Live Server does the serving for you. It opens the page in your browser and
+reloads automatically whenever you save — edit the files and watch it update.
+
+That's the whole point: get VS Code, clone the repo, spin up the dev server, and
+explore, learn and prototype as much as you like.
 
 ## What it demonstrates
 

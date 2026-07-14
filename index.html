@@ -88,11 +88,15 @@
     <section class="section" id="getting-started" aria-labelledby="getting-started-title">
       <h2 class="section__title" id="getting-started-title">Getting started</h2>
       <p class="section__lead">
-        ES modules need to be served over HTTP. From this folder, run any static
-        server and open the printed URL:
+        No build step — just VS Code. Install the
+        <strong>Live Server</strong> extension, then right-click
+        <code>index.html</code> and choose <em>Open with Live Server</em>:
       </p>
-      <pre class="code-block"><code>python3 -m http.server 8000</code></pre>
-      <p class="section__lead">Then edit the files and refresh — that's the loop.</p>
+      <pre class="code-block"><code>Right-click index.html → Open with Live Server</code></pre>
+      <p class="section__lead">
+        Live Server serves the ES modules over HTTP and reloads on save — edit
+        the files and watch it update. That's the loop.
+      </p>
     </section>
 
     <section class="section" id="about" aria-labelledby="about-title">
