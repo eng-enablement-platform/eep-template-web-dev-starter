@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="EEP web dev starter — a clean, mobile-first HTML, CSS and JavaScript scaffold for learning and quick prototyping." />
+  <title>EEP Web Dev Starter</title>
+  <link rel="icon" href="public/eep-logo-nav.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script type="module" src="js/menu.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="/" aria-label="EEP home">
+        <img src="public/eep-logo-nav.svg" alt="EEP" width="240" height="80" />
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <ul class="primary-nav__list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero__logo" src="public/eep-logo-full.svg" alt="Engineering Enablement Platform" width="240" height="112" />
+      <h1 class="hero__title" id="hero-title">Build fast, stay legible.</h1>
+      <p class="hero__lead">
+        A mobile-first HTML, CSS and JavaScript starter. No build step, no
+        framework — just clean, modern, well-documented foundations to learn
+        from or launch from.
+      </p>
+      <a class="button" href="#getting-started">Get started</a>
+    </section>
+
+    <section class="section" id="features" aria-labelledby="features-title">
+      <h2 class="section__title" id="features-title">What's inside</h2>
+      <ul class="card-grid" role="list">
+        <li class="card">
+          <h3 class="card__title">Mobile-first CSS</h3>
+          <p class="card__body">
+            Base styles target small screens; <code>min-width</code> media
+            queries progressively enhance for larger viewports.
+          </p>
+        </li>
+        <li class="card">
+          <h3 class="card__title">Responsive grid</h3>
+          <p class="card__body">
+            These cards use CSS Grid with <code>auto-fit</code> and
+            <code>minmax()</code> — they reflow on their own, no breakpoints
+            required.
+          </p>
+        </li>
+        <li class="card">
+          <h3 class="card__title">Modern JavaScript</h3>
+          <p class="card__body">
+            The hamburger menu is an ES module with JSDoc and accessible
+            <code>aria-expanded</code> state toggling.
+          </p>
+        </li>
+        <li class="card">
+          <h3 class="card__title">Clean structure</h3>
+          <p class="card__body">
+            HTML, CSS and JS live in their own files. No single-file monolith —
+            easy to read, easy to extend.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" id="getting-started" aria-labelledby="getting-started-title">
+      <h2 class="section__title" id="getting-started-title">Getting started</h2>
+      <p class="section__lead">
+        ES modules need to be served over HTTP. From this folder, run any static
+        server and open the printed URL:
+      </p>
+      <pre class="code-block"><code>python3 -m http.server 8000</code></pre>
+      <p class="section__lead">Then edit the files and refresh — that's the loop.</p>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="section__title" id="about-title">About</h2>
+      <p class="section__lead">
+        Part of the Engineering Enablement Platform (EEP) template set. Built to
+        stay comprehensible: strong conventions, documented code, and structure
+        that's accessible to engineers and newcomers alike.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p>&copy; 2026 Engineering Enablement Platform</p>
+      <nav aria-label="Footer">
+        <ul class="site-footer__list" role="list">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
