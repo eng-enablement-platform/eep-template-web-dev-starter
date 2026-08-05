@@ -18,7 +18,8 @@
   --color-border: #cbd5e0;
 
   /* Type */
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans:
+    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, monospace;
 
   /* Rhythm */
@@ -139,7 +140,9 @@ code {
   margin-inline: auto;
   background-color: var(--color-ink);
   border-radius: 2px;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
 }
 
 /* Animate bars into an X when the menu is open */
@@ -279,12 +282,16 @@ main {
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 4px 8px rgba(16, 42, 67, 0.1), 0 12px 28px rgba(16, 42, 67, 0.08);
+  box-shadow:
+    0 4px 8px rgba(16, 42, 67, 0.1),
+    0 12px 28px rgba(16, 42, 67, 0.08);
 }
 
 .card__title {
