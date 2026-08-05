@@ -1,0 +1,11 @@
+{
+  "liveServer.settings.ignoreFiles": [
+    ".gsd/**",
+    ".bg-shell/**",
+    ".context/**",
+    ".agents/**",
+    ".git/**",
+    "**/*.db",
+    "**/*.db-*"
+  ]
+}

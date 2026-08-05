@@ -6,3 +6,7 @@ skills-lock.json
 .claude
 .mcp.json
 .context
+
+# Un-ignore default untracked files that should be part of the template
+!.vscode/
+!.vscode/settings.json
