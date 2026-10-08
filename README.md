@@ -11,8 +11,6 @@
 
 # Web Dev Starter Template
 
- 
-
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue" alt="License: MIT" />
   </a>
@@ -50,3 +48,8 @@ All you need is VS Code and its dev server.
 2. Clone this repo and open the folder in VS Code.
 3. Right-click `index.html` and choose **Open with Live Server**.
 
+### GitHub Pages
+
+Every push to `main` deploys the site via [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
+
+One-time setup: in the repo go to **Settings → Pages** and set **Source** to **GitHub Actions**.
