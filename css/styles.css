@@ -200,7 +200,8 @@ main {
 }
 
 .section {
-  padding-block: clamp(2.5rem, 8vw, 4.5rem);
+  /* Top and bottom padding stack between sections, so keep each side modest */
+  padding-block: clamp(1.25rem, 3vw, 2rem);
 }
 
 .section__title {
@@ -220,7 +221,7 @@ main {
 
 .hero {
   text-align: center;
-  padding-block: clamp(2.5rem, 10vw, 5rem);
+  padding-block: clamp(2rem, 6vw, 3.5rem) clamp(1rem, 3vw, 1.5rem);
 }
 
 .hero__logo {
