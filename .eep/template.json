@@ -1,5 +1,5 @@
 {
   "version": 1,
-  "remove": [],
+  "remove": ["LICENSE"],
   "readme": "README.md"
 }

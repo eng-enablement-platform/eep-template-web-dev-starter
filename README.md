@@ -25,20 +25,10 @@ No build step, no framework, just simple modern foundations.
 
 ## Using this template
 
-Two ways to start your own project from this template:
-
-- **[CLI](https://github.com/eng-enablement-platform/create-eep) (recommended)** - scaffolds a fresh copy with a starter README and no template git history:
-
-  ```bash
-  npx create-eep@latest my-app --template web-dev-starter
-  ```
-
-- **Manual clone** - clone and make it your own by hand (below).
+Start a new project using this template with [create-eep](https://github.com/eng-enablement-platform/create-eep):
 
 ```bash
-git clone https://github.com/eng-enablement-platform/eep-template-web-dev-starter my-app
-cd my-app
-rm -rf .git .eep && git init # start a fresh history that's yours (.eep/ is create-eep setup)
+npx create-eep@latest my-app --template web-dev-starter
 ```
 
 ## Quick Start
