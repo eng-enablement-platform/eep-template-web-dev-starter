@@ -44,3 +44,7 @@ All you need is VS Code and its dev server.
 Every push to `main` deploys the site via [`.github/workflows/pages.yml`](.github/workflows/pages.yml).
 
 One-time setup: in the repo go to **Settings → Pages** and set **Source** to **GitHub Actions**.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md)
