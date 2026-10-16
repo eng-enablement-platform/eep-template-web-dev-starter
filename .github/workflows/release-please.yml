@@ -1,0 +1,39 @@
+# Versioned releases of the template, from conventional commits.
+#
+# release-please keeps one Release PR open (next version + CHANGELOG.md);
+# merging it tags the release (vX.Y.Z) and creates a GitHub Release. Nothing is
+# published - the template is consumed by create-eep, which can pin a release
+# with `--ref vX.Y.Z`.
+#
+# Template-maintenance only: create-eep removes this workflow, CHANGELOG.md,
+# version.txt and the release-please config from generated projects (see
+# .eep/template.json).
+#
+# One-time setup: Settings -> Actions -> General -> "Allow GitHub Actions to
+# create and approve pull requests".
+name: Release Please
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-please
+  cancel-in-progress: false
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    # GITHUB_TOKEN is enough here: this repo has no CI checks for the Release
+    # PR to wait on. (next-app uses a GitHub App token because PRs opened with
+    # GITHUB_TOKEN don't trigger CI, and its ruleset requires CI to pass.)
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      # Config: release-please-config.json + .release-please-manifest.json.
+      - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
