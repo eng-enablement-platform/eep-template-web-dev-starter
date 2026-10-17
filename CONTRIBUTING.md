@@ -9,19 +9,9 @@ Clone it:
 git clone https://github.com/eng-enablement-platform/eep-template-web-dev-starter.git
 ```
 
-There's no build step - open the folder in VS Code and use **Open with Live Server** on `index.html` (see the [README](README.md#quick-start)).
-
 > [!NOTE]
 > The `.eep/` folder tells the [create-eep](https://github.com/eng-enablement-platform/create-eep) CLI how to turn the template into a project (starter README, files to remove etc.).
 > If you add, rename or remove something it references, update `.eep/template.json` and `.eep/README.md` too.
-
-## Testing a change
-
-Try your branch the way a user would, by generating a project from it once it's pushed:
-
-```bash
-npx create-eep@latest my-test --template web-dev-starter --ref <your-branch>
-```
 
 ## Branches
 
